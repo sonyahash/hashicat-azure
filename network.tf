@@ -6,6 +6,7 @@ resource "azurerm_resource_group" "example" {
   name     = "my-resources"
   location = "West Europe"
 }
+resource_group_name = azurerm_resource_group.myresourcegroup.name
 
 module "network" {
   source              = "Azure/network/azurerm"
